@@ -13,6 +13,7 @@ type ProductListProps = {
 const ProductList: React.FC<ProductListProps> = ({ products, addToCart, hasMore, loadMoreProducts, loading }) => {
   const observer = useRef<IntersectionObserver>();
 
+  //Infinitely loading new products
   const lastProductElementRef = useCallback((node: HTMLDivElement) => {
     if (observer.current) observer.current.disconnect();
     observer.current = new IntersectionObserver(entries => {
