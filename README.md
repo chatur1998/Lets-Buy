@@ -1,7 +1,3 @@
-Sure! Here is the updated README with the hosted Vercel link included.
-
----
-
 # E-Commerce Product List App
 
 A React-based e-commerce application with filtering, infinite scrolling, and cart functionality. Built with TypeScript, Tailwind CSS, Vite, and Axios.
