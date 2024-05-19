@@ -97,11 +97,3 @@ Using the [Fake Store API](https://fakestoreapi.com/) for product data.
 3. Commit your changes (`git commit -m 'Add feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a pull request.
-
-## License
-
-MIT License
-
----
-
-Feel free to modify as needed!
