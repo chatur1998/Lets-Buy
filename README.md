@@ -1,30 +1,93 @@
-# React + TypeScript + Vite
+# E-Commerce Product List App - Let's Buy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based e-commerce application with filtering, infinite scrolling, and cart functionality. Built with TypeScript, Tailwind CSS, Vite, and Axios.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Product display with infinite scroll
+- Category and price range filters
+- Add products to the cart
+- Cart modal with total price
+- Responsive design
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (v14+)
+- npm or yarn
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Steps
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/e-commerce-product-list-app.git
+cd e-commerce-product-list-app
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open your browser at `http://localhost:3000`.
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── CartModal.tsx
+│   ├── Filter.tsx
+│   ├── Loader.tsx
+│   ├── Product.tsx
+│   └── ProductList.tsx
+├── utils/
+│   ├── hooks.ts
+│   └── types.ts
+├── App.tsx
+├── main.tsx
+└── index.css
+```
+
+## Key Components
+
+- **ProductList:** Displays products with infinite scrolling.
+- **ProductCard:** Shows product details and an "Add to Cart" button.
+- **Filter:** Dropdowns for category and price range filtering.
+- **CartModal:** Displays cart items and total price.
+- **Loader:** Loading spinner.
+
+## Hooks
+
+- **useProducts:** Fetches and manages product data and state, including infinite scrolling.
+
+## Types
+
+- **types.ts:** Contains TypeScript type definitions for the project.
+
+## API
+
+Using the [Fake Store API](https://fakestoreapi.com/) for product data.
+
+## Contributing
+
+1. Fork the repo.
+2. Create a branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+Feel free to modify as needed!
