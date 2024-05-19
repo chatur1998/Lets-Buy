@@ -1,4 +1,8 @@
-# E-Commerce Product List App - Let's Buy
+Sure! Here is the updated README with the hosted Vercel link included.
+
+---
+
+# E-Commerce Product List App
 
 A React-based e-commerce application with filtering, infinite scrolling, and cart functionality. Built with TypeScript, Tailwind CSS, Vite, and Axios.
 
@@ -6,9 +10,13 @@ A React-based e-commerce application with filtering, infinite scrolling, and car
 
 - Product display with infinite scroll
 - Category and price range filters
-- Add products to the cart
+- Add products to cart
 - Cart modal with total price
 - Responsive design
+
+## Live Demo
+
+Check out the live demo [here](https://ecom-lets-buy.vercel.app/).
 
 ## Installation
 
@@ -52,7 +60,7 @@ src/
 │   ├── CartModal.tsx
 │   ├── Filter.tsx
 │   ├── Loader.tsx
-│   ├── Product.tsx
+│   ├── ProductCard.tsx
 │   └── ProductList.tsx
 ├── utils/
 │   ├── hooks.ts
@@ -89,5 +97,11 @@ Using the [Fake Store API](https://fakestoreapi.com/) for product data.
 3. Commit your changes (`git commit -m 'Add feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a pull request.
+
+## License
+
+MIT License
+
+---
 
 Feel free to modify as needed!
