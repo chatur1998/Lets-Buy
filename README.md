@@ -26,8 +26,8 @@ Check out the live demo [here](https://ecom-lets-buy.vercel.app/).
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/e-commerce-product-list-app.git
-cd e-commerce-product-list-app
+git clone https://github.com/chatur1998/Lets-Buy.git
+cd Lets-Buy
 ```
 
 2. Install dependencies:
