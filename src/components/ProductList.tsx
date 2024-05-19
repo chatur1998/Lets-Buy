@@ -1,6 +1,5 @@
 import React, { useCallback, useRef } from "react";
 import { Product } from "../utils/types";
-import { useProducts } from "../utils/hooks";
 
 type ProductListProps = {
   products: Product[];
